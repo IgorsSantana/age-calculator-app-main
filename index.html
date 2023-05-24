@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <div id="center">
+    <div id="box">
+      <div class="arrow">
+        <img id="arrow-icon" src="src/images/icon-arrow.svg" alt="arrow-icon" onclick="calculate()">
+      </div>
+      <section id="inputs">
+        <div class="input">
+          <h4 class="name">Day</h4><input class="inputs" type="number" name="Day" id="day" placeholder="DD" max="31" min="1">
+          <p class="erro"></p>
+        </div>
+
+        <div class="input">
+          <h4 class="name">Month</h4><input class="inputs" type="number" name="Month" id="month" placeholder="MM" max="12" min="1">
+          <p class="erro"></p>
+        </div>
+
+        <div class="input">
+          <h4 class="name">Year</h4><input class="inputs" type="number" name="Year" id="year" placeholder="YYYY" max="" min="1">
+          <p class="erro"></p>
+        </div>
+      </section>
+
+      <section id="res">
+        <h2><span class="span">--</span> years</h2>
+        <h2><span class="span">--</span> months</h2>
+        <h2><span class="span">--</span> days</h2>
+      </section>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Igor Silva Santana</a>.
+  </div>
+
+  <script src="src/js/index.js"></script>
+</body>
+</html>
